@@ -2,15 +2,13 @@ package utility;
 
 import java.util.HashMap;
 import java.util.Random;
-
-import model.boundary.EBoundaryType;
 import model.boundary.IBoundary;
 import model.boundary.IPosition;
 import model.boundary.Position;
 
 public class Utils {
 
-  private static Random random;
+  private static Random random = new Random();
 
   public enum EDirection {
     UP, LEFT, RIGHT, DOWN
