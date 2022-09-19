@@ -11,26 +11,31 @@ public interface IBoundary {
 
   /**
    * Determines the boundary type.
+   * 
    * @return an enum representing the type.
    */
   EBoundaryType getBoundaryType();
 
   /**
    * Determines if the given position is within the boundary or not.
+   * 
    * @param position the position to check
    * @return a boolean determining if the position is within the boundary or not.
    */
   boolean outOfBounds(IPosition position);
 
   /**
-   * Gets the needle's position.
-   * @return a position object.
+   * Gets the width of the Boundary. A boundary's width is always between 0 and
+   * this value.
+   * 
    */
-  IPosition needlePosition();
+  int getWidth();
+
   /**
-   * Gets the seeker's position.
-   * @return a position object.
+   * Gets the height of the Boundary. A boundary's height is always between 0 and
+   * this value.
+   * 
    */
-  IPosition seekerPosition();
+  int getHeight();
 
 }

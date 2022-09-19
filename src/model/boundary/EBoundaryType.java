@@ -5,5 +5,5 @@ package model.boundary;
  * Representations mirror geometric shapes
  */
 public enum EBoundaryType {
-  CIRCLE, RECTANGLE, SQUARE
+  CIRCLE, RECTANGLE
 }
